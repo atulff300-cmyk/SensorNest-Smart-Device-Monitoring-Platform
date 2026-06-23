@@ -12,6 +12,7 @@ const SensorDataSchema = new mongoose.Schema({
   timestamp: {
     type: Date,
     default: Date.now,
+    expires: '7d', // Yeh line 7 din baad data automatically udha degi
   },
 });
 
